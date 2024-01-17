@@ -163,3 +163,5 @@ document.getElementById("restartButton").addEventListener("click", function() {
   gameContainer.style.display = "none";
   startButton.disabled = true;
 });
+
+//pengubah
