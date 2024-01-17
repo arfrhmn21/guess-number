@@ -2,18 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
-body {
+.container {
     font-family: Arial, sans-serif;
     text-align: center;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    transform: scale(2.4);
 }
 
 #difficultyContainer, #difficultyForm, #gameContainer {
@@ -68,11 +70,3 @@ button {
 .red {
     color: red;
 }
-
-@media (max-width: 477px) {
-    * {
-        transform: scale(1.7);
-    }
-}
-
-/* pengubah */
