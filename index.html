@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tebak Angka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Permainan Tebak Angka</h1>
+  <p class="watermark">@arfrhmn21_</p>
+  <div id="difficultyContainer">
+    <p style="padding-bottom: 5px;">Pilih tingkat kesulitan:</p>
+    <form id="difficultyForm">
+      <label>
+        <input type="radio" name="difficulty" value="easy"> Mudah
+      </label>
+      <label>
+        <input type="radio" name="difficulty" value="normal"> Normal
+      </label>
+      <label>
+        <input type="radio" name="difficulty" value="hard"> Sulit
+      </label>
+      <label>
+        <input type="radio" name="difficulty" value="hardest"> Sangat Sulit
+      </label>
+      <br>
+      <p>Pilih range angka:</p>
+      <label>
+        <input type="radio" name="range" value="10"> 1-10
+      </label>
+      <label>
+        <input type="radio" name="range" value="15"> 1-15
+      </label>
+      <label>
+        <input type="radio" name="range" value="20"> 1-20
+      </label>
+      <br><br>
+      <button type="submit" id="startButton" disabled>Mulai</button>
+    </form>
+  </div>
+
+
+  <div id="gameContainer" style="display: none;">
+    <p id="tebakAngka">Tebak angka:</p>
+    <form id="guessForm">
+      <input type="number" id="guessInput" min="1" max="20">
+      <button type="submit" id="guessButton">Tebak</button>
+      <button type="button" id="restartButton" style="display: none;">Ulangi</button>
+    </form>
+    <p id="message"></p>
+    <p id="chances"><span id="chancesText">Sisa kesempatan:</span> <span id="chancesNumber"></span></p>
+  </div>
+
+  <audio id="winSound" src="sounds/win.wav"></audio>
+  <audio id="loseSound" src="sounds/lose.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
