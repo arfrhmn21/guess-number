@@ -1,3 +1,5 @@
+// instagram: @arfrhmn21_
+
 let difficultyContainer = document.getElementById("difficultyContainer");
 let difficultyForm = document.getElementById("difficultyForm");
 let gameContainer = document.getElementById("gameContainer");

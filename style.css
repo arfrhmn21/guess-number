@@ -1,8 +1,10 @@
+/* instagram: @arfrhmn21_ */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -15,7 +17,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    transform: scale(2.4);
+    /* transform: scale(2.4); */
 }
 
 #difficultyContainer, #difficultyForm, #gameContainer {
@@ -69,4 +71,14 @@ button {
 
 .red {
     color: red;
+}
+
+@media (max-width: 477px) {
+    .container h1 {
+        font-size: 20px;
+    }
+
+    #message {
+        font-size: 13px;
+    }
 }
